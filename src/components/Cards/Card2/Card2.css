@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .first-card2{
+    margin: auto;
+    background-size: cover;
+    width: 400px;
+    height: 230px;
+  }
+  
+  .design-div {
+    text-align: center;
+    padding-top: 35px;
+  }
+
+  .logo-img{
+    width: 75px;
+  }
+  .company-name {
+    color: #e9e9e9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+  }
+  
+  .slogan1 {
+    color: #e9e9e9;
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .down-part-lorem2 {
+    color: #e9e9e9;
+    transform: translate(0px, 54px);
+    text-align: center;
+    font-size: 11px;
+  }
+  
+  
+  .company-info {
+    padding: 30px;
+  }
+  
+  .card-holder-name {
+    color: #e9e9e9;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .flex{
+    display: flex;
+  }
+  
+  .card-holder-surname {
+    color: gray;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .cofounder-p {
+    border-bottom: 2px solid #fff;
+    max-width: 120px;
+    color: #fff;
+    font-size: 9px;
+  }
+  
+  .cofounder-p::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid red;
+    margin-bottom: -2px;
+    max-width: 20px;
+    margin-top: 8px;
+  }
+  
+ 
+  .down-part-lorem1 {
+    color: #fff;
+    font-size: 12px;
+    transform: translate(19px, 2px);
+  }
+  
+  .down-part-number {
+    color: #fff;
+    transform: translate(13px, 6px);
+    font-size: 12px;
+  }
+  
+  .down-part-email {
+    color: #fff;
+    transform: translate(7px, 10px);
+    font-size: 12px;
+  }
+  
+  .down-part-website {
+    color: #fff;
+    transform: translate(0px, 14px);
+    font-size: 12px;
+  }
+  
+  .address-div {
+    display: flex;
+   justify-content: flex-end;
+   margin-top: 28px;
+   margin-right: 33px;
+
+  }
+  
+  .fonticon {
+    text-align: right;
+  }
+  
+  .diviconlist {
+    text-align: center;
+    /* transform: translate(-24px, 0px); */
+    font-size: 10px;
+    color: rgb(243, 237, 237);
+  }
+  
+  .fonticon p {
+    font-size: 10px;
+  }
+  .fa-location-dot {
+    transform: translate(0px, 0px);
+  }
+  .fa-phone {
+    transform: translate(-9px, 7px);
+  }
+  
+  .fa-envelope {
+    transform: translate(-21px, 15px);
+  }
+  
+  .fa-arrow-pointer {
+    transform: translate(-32px, 23px);
+
+  }
+  
+.second-card2{
+  background-size: cover;
+  width: 400px;
+  height: 230px;
+  margin: auto;
+  text-align: left;
+}

@@ -1,0 +1,15 @@
+/* @media print{
+  @page {
+      size: 400px 230px;
+      margin: 0;
+    }
+  
+    body {
+      margin: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      width: 400px;
+      height: 230px;
+      overflow: hidden;
+    }
+} */

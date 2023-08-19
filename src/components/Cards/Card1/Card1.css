@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+  /* width: 40%; */
+  height: auto;
+  padding-top: 20px;
+
+}
+.background {
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.down-part-lorem {
+  color: #272623;
+  transform: translate(-3px, 143px);
+  font-size: 12px;
+}
+/* .down-part-website{
+  font-weight: 800;
+} */
+.company-name-design {
+  color: #e9e9e9;
+  text-align: left;
+  letter-spacing: 2px;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+/* .company-name-animate {
+  animation: companyNameAnim 1s linear;
+} */
+
+/* @keyframes companyNameAnim {
+  from {
+    max-width: 0px;
+  }
+  to {
+    max-width: 300px;
+  }
+} */
+.company-name-slogan {
+  color: orange;
+  font-size: 7px;
+  letter-spacing: 4px;
+  margin-top: 4px;
+}
+.icon-group {
+  color: orange;
+  font-size: 12px;
+  padding-right: 5px;
+}
+.fa-location1:before {
+  display: none;
+}
+.fa-phone1:before {
+  display: none;
+}
+.fa-envelope1:before {
+  display: none;
+}
+.fa-arrow-pointer1:before {
+  display: none;
+}
+
+.icon-information1 {
+  font-size: 10px;
+  text-align: left;
+}
+
+.icon-information1 > div > div {
+  padding: 0px;
+}
+
+.second-card {
+  background-size: cover;
+  width: 400px;
+  height: 230px;
+  margin: auto;
+  box-shadow: 1px 4px 9px;
+  /* display: flex; */
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  /* border-radius: 15px; */
+}
+.information-box {
+  display: flex;
+  /* justify-content: space-between; */
+  transform: translate(10px, -110px);
+
+}
+.company-name3 {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #e9e9e9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.occupation {
+  color: orange;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+.first-card {
+  background-size: cover;
+  width: 400px;
+  height: 230px;
+  box-shadow: 1px 4px 9px;
+  /* border-radius: 15px; */
+  margin: auto;
+}
+.first-card-design {
+  display: flex;
+  justify-content: space-around;
+  width: 170px;
+  margin: auto;
+  height: 70px;
+  align-items: center;
+  transform: translate(0px, -208px);
+
+}
+.firstCardLogo {
+  width: 50px;
+  height: auto;
+}
+.item-text {
+  font-weight: 800;
+
+}
+.card-holder-name1 {
+  display: inline-block;
+  margin-right: 8px;
+  
+}
+
+.span-text {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+.card-first-card-logo-box {
+  width: 140px;
+  text-align: center;
+}
+.card-first-card-logo {
+  width: 50px;
+  margin-right: 10px;
+}
+.lorem {
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  /* margin-top: 130px;
+  margin-right: 18px; */
+  transform: translate(-20px, -102px);
+}
+.first-card-blog{
+  height: 230px;
+}
+.second-card-blog{
+  height: 230px;
+}
+.cardHolderNameBox{
+  transform: translate(110px, -152px);
+
+}
+
+.company-name-line{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+ 
+}
+.company-name-cc{
+  flex-direction: column;
+}

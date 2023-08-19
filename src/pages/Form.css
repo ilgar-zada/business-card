@@ -1,0 +1,66 @@
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.visaPageBox {
+  /* display: flex;
+  justify-content: space-around;
+  margin: auto; */
+
+}
+/* .exampleBox{
+  background-repeat: no-repeat;
+  width:100%;
+   background-image: url('../../components/photos/istockphoto.jpg') !important; 
+  background-size: cover;
+} */
+.left-box {
+  
+ background-color: transparent; 
+  width: 100%;
+  text-align: center;
+}
+.right-box {
+  background-color: transparent; 
+  width: 100%;
+  text-align: center;
+
+}
+.left-header {
+  margin-top: 20px;
+}
+.right-header {
+  margin-top: 20px;
+}
+.template-button-box {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+ 
+ 
+}
+.templateBox {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.css-yjsfm1{
+  display: none !important;
+}
+
+
+.css-1duy1hk .MuiTextField-root {
+  margin: 6px !important;
+}
+
+.css-1duy1hk {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+}
