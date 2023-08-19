@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 //css
-import "./Card3.css"
+import "./Card3.css";
 //assets
 import CardFirst from "../Card3/CardFirst.png";
 import CardSecond from "../Card3/CardSecond.png";
@@ -8,50 +8,47 @@ import CardLogo from "../Card3/CardLogo.svg";
 import Store from "../../context/store";
 import { alignProperty } from "@mui/material/styles/cssUtils";
 const Card3 = ({ card3, cardData }) => {
-  const { selectFile,fileDataURL, fontSize, nameStatus} = useContext(Store);
-    const [companyNameLines3, setCompanyNameLines3] = useState([]);
-    const [companySloganLines, setCompanySloganLines] = useState([]);
-    const [companyLorems, setCompanyLorems] = useState([]);
-    const [positionPart, setPositionPart] = useState([]) ;
+  const { selectFile, fileDataURL, fontSize, nameStatus } = useContext(Store);
+  const [companyNameLines3, setCompanyNameLines3] = useState([]);
+  const [companySloganLines, setCompanySloganLines] = useState([]);
+  const [companyLorems, setCompanyLorems] = useState([]);
+  const [positionPart, setPositionPart] = useState([]);
 
-
-    useEffect(() => {
-      const companyName =
+  useEffect(() => {
+    const companyName =
       cardData.companyName || card3.firstCardContent.companyNameText;
-      const firstLine  = companyName.slice(0, 16);
-      const secondLine = companyName.slice(16);
+    const firstLine = companyName.slice(0, 16);
+    const secondLine = companyName.slice(16);
 
-      const companySlogan =
+    const companySlogan =
       cardData.companySlogan || card3.firstCardContent.companyNameSloganText;
-      const firstLine1  = companySlogan.slice(0, 16);
-      const secondLine1 = companySlogan.slice(16);
+    const firstLine1 = companySlogan.slice(0, 16);
+    const secondLine1 = companySlogan.slice(16);
 
-      const description =
+    const description =
       cardData.description || card3.firstCardContent.companyNameLoremText;
-      const firstLine2  = description.slice(0, 18);
-      const secondLine2 = description.slice(18);
+    const firstLine2 = description.slice(0, 18);
+    const secondLine2 = description.slice(18);
 
-      const position =
+    const position =
       cardData.position || card3.secondCardContent.cardHolderOccupationText;
-      const firstLine3  =  position.slice(0,28);
-      const secondLine3 =  position.slice(28);
+    const firstLine3 = position.slice(0, 28);
+    const secondLine3 = position.slice(28);
 
-
-      setCompanyNameLines3([firstLine, secondLine]);
-      setCompanySloganLines([firstLine1, secondLine1]);
-      setCompanyLorems([firstLine2, secondLine2]);
-      setPositionPart([firstLine3, secondLine3])
-    }, 
-    [
-      cardData.companyName,
-      card3.firstCardContent.companyNameText,
-      cardData.companySlogan,
-      card3.firstCardContent.companyNameSloganText,
-      cardData.description,
-      card3.firstCardContent.companyNameLoremText,
-      cardData.position,
-      card3.secondCardContent.cardHolderOccupationText
-    ]);
+    setCompanyNameLines3([firstLine, secondLine]);
+    setCompanySloganLines([firstLine1, secondLine1]);
+    setCompanyLorems([firstLine2, secondLine2]);
+    setPositionPart([firstLine3, secondLine3]);
+  }, [
+    cardData.companyName,
+    card3.firstCardContent.companyNameText,
+    cardData.companySlogan,
+    card3.firstCardContent.companyNameSloganText,
+    cardData.description,
+    card3.firstCardContent.companyNameLoremText,
+    cardData.position,
+    card3.secondCardContent.cardHolderOccupationText,
+  ]);
   return (
     <>
       <div className="cards">

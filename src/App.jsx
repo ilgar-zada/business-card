@@ -1,4 +1,3 @@
-
 import "./App.css";
 //card1
 import FrontFoto from "./components/Cards/Card1/FrontFoto192.png";
@@ -10,10 +9,9 @@ import SecondCard2 from "./components/Cards/Card2/SecondCard2.png";
 // card3
 import CardFirst from "./components/Cards/Card3/CardFirst.png";
 import CardSecond from "./components/Cards/Card3/CardSecond.png";
-import {BrowserRouter, Route, Routes, } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Form from "./pages/Form.jsx"
-
+import Form from "./pages/Form.jsx";
 
 import Store from "./components/context/store";
 import { useState } from "react";
@@ -24,8 +22,7 @@ import {
   FaPhone,
 } from "react-icons/fa6";
 
-
-import Card1 from "./components/Cards/Card1/Card1"
+import Card1 from "./components/Cards/Card1/Card1";
 import Card2 from "./components/Cards/Card2/Card2";
 import Card3 from "./components/Cards/Card3/Card3";
 
@@ -33,10 +30,10 @@ function App() {
   const [selectedCard, setSelectedCard] = useState(0);
   const [cardData, setCardData] = useState([]);
   const [fileDataURL, setFileDataURL] = useState(null);
-  const [fontSize, setFontSize] = useState(10)
-  const [flexDirection, setFlexDirection] = useState(false)
+  const [fontSize, setFontSize] = useState(10);
+  const [flexDirection, setFlexDirection] = useState(false);
   const [nameStatus, setNameStatus] = useState(false);
-  const [name, setName] = useState("")
+  const [name, setName] = useState("");
 
   const cards = [
     {
@@ -274,7 +271,6 @@ function App() {
 
   return (
     <>
-      
       <Store.Provider
         value={{
           selectedCard,
@@ -289,7 +285,7 @@ function App() {
           flexDirection,
           setFlexDirection,
           nameStatus,
-          setNameStatus
+          setNameStatus,
         }}
       >
         <BrowserRouter>

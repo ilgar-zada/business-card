@@ -56,22 +56,21 @@ function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-//card1
-  if (e.target.companyName.value.length >= 4) {
-    setFlexDirection(true);
-  } 
 
-  //card3
+    //card1
+    if (e.target.companyName.value.length >= 4) {
+      setFlexDirection(true);
+    }
+
+    //card3
 
     if (e.target.companyName.value.length >= 4) {
       setFlexDirection(true); // Call setDirection when companyName length is greater than or equal to 4
     }
 
-    if(e.target.name.value.length >= 7 ){
-         setNameStatus(true)
+    if (e.target.name.value.length >= 7) {
+      setNameStatus(true);
     }
-  
 
     const file = e.target.logo.files[0];
 
@@ -93,42 +92,35 @@ function Form() {
       description: e.target.description.value,
     };
 
-
     //card1
-      if (e.target.name.value.length >= 10) {
-        setName(e.target.name.value);
-        // setFlexDirection(true)
-      } else {
-        setFontSize(15);
-      }
+    if (e.target.name.value.length >= 10) {
+      setName(e.target.name.value);
+      // setFlexDirection(true)
+    } else {
+      setFontSize(15);
+    }
 
-      //card3
+    //card3
 
-  const inputValue = e.target.address.value;
-   if(inputValue.length >=30){
-    setFontSize(9)
-   }else {setFontSize(12) }
+    const inputValue = e.target.address.value;
+    if (inputValue.length >= 30) {
+      setFontSize(9);
+    } else {
+      setFontSize(12);
+    }
 
-
-
-
-      
-      
     //  setCardData([...cardData,cardInformation]) keohne datalari sxlamaq shertile
     // yeni dtalari yazdirmaq istedikde spread metodu ist ele
     setCardData(cardInformation); //2ci metod
     setAnimateCard1(true);
     setTimeout(() => {
-    setAnimateCard1(false);
+      setAnimateCard1(false);
     }, 2000);
   };
-// const inputValue1 = e.target.companyName.value;
-//   if(inputValue1.length >=4){
-//         setDirection()
-//   }
-
-  
-   
+  // const inputValue1 = e.target.companyName.value;
+  //   if(inputValue1.length >=4){
+  //         setDirection()
+  //   }
 
   const fieldInfo = [
     {
@@ -212,7 +204,7 @@ function Form() {
     setSelectedCard(id);
   };
 
-  // const createPDF = async () => { 
+  // const createPDF = async () => {
   //   var node = document.querySelector(".first-card");
 
   //   const dataUrl = await domtoimage.toPng(node, { quality: 1 });
@@ -293,7 +285,6 @@ function Form() {
                   variant={field.variant}
                   placeholder={field.placeholder}
                   type={field.type}
-                
                 />
               ))}
 
@@ -409,10 +400,7 @@ function Form() {
                 <Card2 card={cards[1]} cardData={cardData} />
               )}
               {selectedCard === 2 && (
-                <Card3
-                  card3={cards[2]}
-                  cardData={cardData}
-                />
+                <Card3 card3={cards[2]} cardData={cardData} />
               )}
             </Grid>
             <div>
